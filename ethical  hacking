@@ -1,0 +1,31 @@
+nslookup google.com
+Server:		127.0.0.53
+Address:	127.0.0.53#53
+
+Non-authoritative answer:
+Name:	google.com
+Address: 142.250.206.14
+Name:	google.com
+Address: 2404:6800:4007:80f::200e
+nslookup -type=ns youtube.com
+Server:		127.0.0.53
+Address:	127.0.0.53#53
+
+Non-authoritative answer:
+youtube.com	nameserver = ns2.google.com.
+youtube.com	nameserver = ns1.google.com.
+youtube.com	nameserver = ns3.google.com.
+youtube.com	nameserver = ns4.google.com.
+
+Authoritative answers can be found from:
+
+ nslookup -type=mx youtube.com
+Server:		127.0.0.53
+Address:	127.0.0.53#53
+
+Non-authoritative answer:
+youtube.com	mail exchanger = 0 smtp.google.com.
+
+Authoritative answers can be found from:
+
+
